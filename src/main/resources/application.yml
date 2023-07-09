@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: logstash-example
+server:
+  port: 8080
+
+app:
+  project:
+    version : "1"
+  logging:
+    logstash:
+      enabled: true
+      host: http://logstash-url
+      port: logstash-port
+      queue-size: 1024
